@@ -1,0 +1,40 @@
+<ion-view view-title="{{detailData.title}}">
+
+	<button class="button">返回</button>
+	
+	<ion-content class="padding detail">
+		<div class="padding-bottom box1">
+			<img ng-src="{{detailData.images.large}}"/>
+			<p>类型：{{detailData.genres.join(",")}}</p>
+			<p>国家：{{detailData.countries.join(" ")}}</p>
+			<p>年份：{{detailData.year}}</p>
+			<p>豆瓣评分：{{detailData.rating.average}}</p>
+		</div>
+		<div class="box2">
+			<h4 class="assertive">导演</h4>
+			<div class="box-scroll">
+				<ul>
+				<li ng-repeat="director in detailData.directors ">
+					<img ng-src="{{director.avatars.medium}}"/>
+					<p>{{director.name}}</p>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div class="box2">
+			<h4 class="assertive">演员表</h4>
+			<div class="box-scroll">
+				<ul>
+				<li ng-repeat="cast in detailData.casts">
+					<img ng-src="{{cast.avatars.medium}}"/>
+					<p>{{cast.name}}</p>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div class="box2">
+			<h4 class="assertive">简介</h4>
+			<p>{{detailData.summary}}</p>
+		</div>
+	</ion-content>
+</ion-view>

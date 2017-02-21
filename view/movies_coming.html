@@ -1,0 +1,18 @@
+<ion-view view-title="即将上映">
+	<ion-content class="padding">
+		<ion-list>
+			<ion-item class="item-thumbnail-left item-text-wrap" ng-repeat="item in subjects"
+				ui-sref="detail({id:item.id})">
+				<img ng-src="{{item.images.small}}"/>
+				<h2>{{item.title}}</h2>
+				<p>类型：{{item.genres.join(",")}}</p>
+				<p>导演：<span ng-repeat="dir in item.directors">{{dir.name}}&nbsp;</span></p>
+				<p>主演：<span ng-repeat="casts in item.casts">{{casts.name}},</span></p>
+				<p>评分：{{item.rating.average}}</p>
+				
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
+
+

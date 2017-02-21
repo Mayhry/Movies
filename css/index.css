@@ -1,0 +1,53 @@
+
+.item-thumbnail-left .item-content .item-image, .item-thumbnail-left .item-content>img:first-child, .item-thumbnail-left .item-image, .item-thumbnail-left>img:first-child {
+    max-height: 85%;
+    height: auto;
+}
+.item-thumbnail-left, .item-thumbnail-left .item-content {
+    margin-bottom: 10px;
+}
+.tabs{
+	color: royalblue;
+}
+.box1>img{
+	display: block;
+	width: 140px !important;
+	height: 200px;
+	margin: 0 auto;
+}
+.box1 p{
+	text-align: center;
+}
+.box2{
+	border-top: 1px solid #000;
+}
+.box2 p{
+	text-align: center;
+}
+.box2:last-child p{
+	text-indent: 2em;
+	text-align: left;
+}
+ion-content.detail{
+	background-color: rgb(242, 242, 242);
+}
+.box-scroll{
+	overflow-x: auto;
+}
+.box-scroll ul{
+	width: 999999px;
+}
+.box-scroll ul li{
+	float: left;
+	padding: 0 20px;
+}
+.box-scroll ul li img{
+	width: 100px;
+	height: 140px;
+}
+
+
+
+
+
+
